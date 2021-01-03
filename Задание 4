@@ -1,0 +1,16 @@
+print("Введите width:")
+a = int(input())
+print("Введите length:")
+b = int(input())
+print("Введите height:")
+c = int(input())
+if a < 15 and b < 15 and c < 15:
+    print("Коробка №1")
+else:
+    if a < 50 and b < 50 and c < 50:
+        print("Коробка №2")
+    else:
+        if b > 200:
+            print("Упаковка для лыж")
+        else:
+            print("Стандартная коробка №3")
