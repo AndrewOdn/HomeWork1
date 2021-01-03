@@ -1,0 +1,25 @@
+from math import sqrt
+print("Введите тип фигуры:")
+a = str(input())
+if (a.lower() == "круг"):
+    print("Введите радиус круга:")
+    a1 = float(input())
+    s = a1*a1*3.14159265359
+    print("Результат:\nПлощадь круга: %.2f"%s)
+if (a.lower() == "треугольник"):
+    print("Введите длину стороны A:")
+    a2 = float(input())
+    print("Введите длину стороны B:")
+    b2 = float(input())
+    print("Введите длину стороны C:")
+    c2 = float(input())
+    p = (a2+b2+c2)/2
+    s = sqrt(p*(p-a2)*(p-b2)*(p-c2))
+    print("Результат:\nПлощадь трекгольника: %.2f"%s)
+if (a.lower() == "прямоугольник"):
+    print("Введите длину стороны A:")
+    a3 = float(input())
+    print("Введите длину стороны B:")
+    b3 = float(input())
+    s = a3*b3
+    print("Результат:\nПлощадь трекгольника: %.2f"%s)
