@@ -1,0 +1,8 @@
+phrase_1 = str(input())
+phrase_2 = str(input())
+if len(phrase_1) > len(phrase_2):
+    print("Фраза 1 длиннее фразы 2")
+elif len(phrase_1) == len(phrase_2):
+    print("Фразы равной длины")
+elif len(phrase_1) < len(phrase_2):
+    print("Фраза 2 длиннее фразы 1")
